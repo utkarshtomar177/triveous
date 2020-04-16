@@ -73,7 +73,7 @@ router.post('/create', (req, res,next) => {
             });
         }
         else{
-            res.send('Bookmark with similar title exists!');
+            res.send('Bookmark with similar link exists!');
         }
     });
     

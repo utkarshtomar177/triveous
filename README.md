@@ -6,7 +6,10 @@ Bookmarks:
 ex: {
 	"link": "link",
 	"title": "titsle",
-	"publisher": "publisher"
+	"publisher": "publisher",
+	"title" : [
+	"tag1" , "tag2"
+	]
 	
 }
 
