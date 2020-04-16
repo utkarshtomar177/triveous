@@ -58,10 +58,10 @@ router.post('/create', (req, res,next) => {
     }
     
     var datetime = moment().format('YYYY-MM-DD hh:mm:ss');
-    let sql = 'SELECT * FROM bookmarks WHERE title = ?';
+    let sql = 'SELECT * FROM bookmarks WHERE link = ?';
     
    console.log(tags_string_comma);
-    mysql_connection.query(sql,[title], (err,result) => {
+    mysql_connection.query(sql,[link], (err,result) => {
         if(err) throw err;
         if(result.length == 0){
             sql = 'INSERT INTO bookmarks(link,title,tags,publisher,time_created) VALUES(?,?,?,?,?)';
